@@ -1,0 +1,60 @@
+body {
+  background-color: #336;
+  color: #FFF;
+}
+
+.box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.girl {
+  background: url("files/2dmotion.png");
+  height: 60px;
+  margin: 20px auto;
+  width: 60px;
+}
+
+.girl.girl_magic1 {
+  animation: motion1 1.0s steps(3,end);
+  background-position: 0 0;
+}
+
+.girl.girl_magic2 {
+  animation: motion2 1.0s steps(3,end);
+  background-position: 0 -60px;
+}
+
+.girl.girl_magic3 {
+  animation: motion3 1.0s steps(3,end);
+  background-position: 0 -120px;
+}
+
+.girl.girl_magic4 {
+  animation: motion4 1.0s steps(3,end);
+  background-position: 0 -180px;
+}
+
+@keyframes motion1 {
+  100% {
+    background-position: -180px 0;
+  }
+}
+
+@keyframes motion2 {
+  100% {
+    background-position: -180px -60px;
+  }
+}
+
+@keyframes motion3 {
+  100% {
+    background-position: -180px -120px;
+  }
+}
+
+@keyframes motion4 {
+  100% {
+    background-position: -180px -180px;
+  }
+}
